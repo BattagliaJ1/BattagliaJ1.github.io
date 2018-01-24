@@ -1,0 +1,10 @@
+box wieght = mg
+weight parrallel = boxWeight*(sin(angle))
+Fnet = fa - weightParrallel
+mu = Fnet/weightParrallel
+
+force of weight = mg
+fa = mass*Sin(angle)
+F = ma 
+ff = -(F-fa)
+mu = ff/weight
