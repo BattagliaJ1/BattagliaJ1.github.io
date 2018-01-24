@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta name="author" content="Justin Battaglia">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
         <link rel="icon" href="">
@@ -15,7 +14,7 @@
             font-family: muli;
         }
         
-      @media screen and (max-width: 650px) {
+        @media screen and (max-width: 650px) {
             div.flexItems {
                 display: block;
                 width: 200%;
@@ -89,12 +88,114 @@
             padding: 10px;
             border: solid white 2px;
         }
+        
+        .mainFooter {
+            position: absolute;
+            color: white;
+            font-size: 2em;
+            background-color: orange;
+            text-align: center;
+            margin: 10% -1% -4%-1%;
+            padding: 10px;
+            border: solid white 2px;
+            width: 100%;
+        }
+        
+        #modalBtn img{
+            height: 10%;
+            width: 10%;
+            margin-left: 10%;
+        }
+        
+        #modalBtn img:hover{
+            cursor: pointer;
+            filter: saturate(0%)
+        }
+        
+        .modal{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: none;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        .modal-content{
+            background-color:#f4f4f4;
+            margin: auto;
+            margin-top: 5%;
+            width: 75%;
+            height: 75%;
+            box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+            animation-name: modalopen;
+            animation-duration: 1s;
+            overflow: scroll;
+            
+        }
+        
+        .modal-body {
+            padding: 5%;
+        }
+        
+        @media screen and (max-width: 750px) {
+            .modal-content {
+                width: 95%;
+                margin: 60% auto;
+            }
+        }
+
+        .modal-header h2, .modal-footer h3{
+          margin:0;
+        }
+
+        .modal-header{
+            position: fixed;
+            right: 14%;
+            margin: auto;
+            background-color: coral;
+            padding: 15px;
+            color: #fff;
+        }
+        
+        .closeBtn {
+            color: #ccc;
+            float: right;
+            font-size: 2em;
+            color: #fff;
+            transition: 1s all;
+        }
+
+        .closeBtn:hover,.closeBtn:focus{
+            color: #cdd;
+            text-decoration: none;
+            cursor: pointer;
+            -ms-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+
+        }
     </style>
     <body>
         <h1 class="mainHeader">Physics Workshop</h1>
+        <div id="simpleModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn">&#10540;</span>
+                </div>
+                <div class="modal-body">
+                    <p>sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk  jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk  jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jl jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk  jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
         <div class=flexItems>
             <div class="frame">
-                <h1>Balistic Pendulum</h1>
+                <h1>Balistic Pendulum<span id="modalBtn"><img alt="question" src="questionMark.png"/></span></h1>
                 <p class="frameItems">
                     Enter your gravity:<br>
                     <input type="text" id="gravity" name="gravity" value="9.80065"><br><br>
@@ -147,22 +248,46 @@
                 <p class="frameItems">
                     Enter the degree of incline on your ramp:<br>
                     <input type="text" id="inclineAngle2" name="inclineAngle2"><br><br>
-                    Enter the force of weight, of your object(F<sub>w</sub> = mg):<br>
+                    Enter the force of weight(Newtons), of your object(F<sub>w</sub> = mg):<br>
                     <input type="text" id="Fw" name="Fw"><br><br>
                     Enter the acceleration:<br>
                     <input type="text" id="acceleration2" name="acceleration2"><br><br>
                 </p>
-                <h4>*Try changing the Force of weigth (F<sub>w</sub>)</h4>
+                <h4>*P.S. see what happens when you change the weight (F<sub>w</sub>)</h4>
                 <p>
                     <button class="mainBtn" onclick="rampB()">Get Coefficient  of Friction</button>
                 </p>
                 <h3>Answer: </h3><p id="demo4">&rang;&rang;&rang;</p>
             </div>
         </div>
+        <h1 class="mainFooter">By: <i>Justin Battaglia</i> &copy; 2018</h1>
         <script>
+            var modal = document.getElementById('simpleModal');
+            var modalBtn = document.getElementById('modalBtn');
+            var closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+            modalBtn.addEventListener('click', openModal);
+            closeBtn.addEventListener('click', closeModal);
+            window.addEventListener('click', outsideClick);
+
+            function openModal(){
+              modal.style.display = 'block';
+            }
+
+            function closeModal(){
+              modal.style.display = 'none';
+            }
+
+            function outsideClick(e){
+              if(e.target == modal){
+                modal.style.display = 'none';
+              }
+            }
+            
             function isInteger(x) {
                 return typeof(x);
             }
+            
             (function (R) {
                   Math.cosd = function(d) { return Math.cos(d * R); };
                   Math.sind = function(d) { return Math.sin(d * R); };
@@ -218,7 +343,7 @@
                 var F = (Fw/9.80065)*acceleration2
                 var Ff = -1*(F-Fa)
                 var mu = Ff/Fn
-                if (mu < 0) {
+                if (mu < 0 || inclineAngle2 >= 90) {
                     document.getElementById("demo4").innerHTML = "Impossible Situation";
                 }
                 else {
