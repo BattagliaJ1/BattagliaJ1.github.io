@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Physicss</title>
+        <title>Physics</title>
         <meta charset="UTF-8">
         <meta name="author" content="Justin Battaglia">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -131,7 +131,7 @@
                     <input type="text" id="friction" name="friction"><br><br>
                 </p>
                 <p>
-                    <button class="mainBtn" onclick="rampA()">Get Final Velocity</button>
+                    <button class="mainBtn" onclick="rampA()">Get Acceleration</button>
                 </p>
                 <h3>Answer: </h3><p id="demo3">&rang;&rang;&rang;</p>
             </div>
@@ -147,7 +147,7 @@
                 </p>
                 <h4>*Try changing the Force of weigth (F<sub>w</sub>)</h4>
                 <p>
-                    <button class="mainBtn" onclick="rampB()">Get Final Velocity</button>
+                    <button class="mainBtn" onclick="rampB()">Get Coefficient  of Friction</button>
                 </p>
                 <h3>Answer: </h3><p id="demo4">&rang;&rang;&rang;</p>
             </div>
@@ -199,7 +199,7 @@
                 var friction = Number(document.getElementById("friction").value);
                 var gravity = 9.80065
                 var acceleration = gravity*(Math.sind(inclineAngle)) - ((friction*gravity)*(Math.cosd(inclineAngle)))
-                document.getElementById("demo3").innerHTML = "The final velocity of this object is " + acceleration + " m/s<sup>2</sup>";
+                document.getElementById("demo3").innerHTML = "The final acceleration of this object is " + acceleration + " m/s<sup>2</sup>";
             }
             
             function rampB() {
@@ -211,7 +211,12 @@
                 var F = (Fw/9.80065)*acceleration2
                 var Ff = -1*(F-Fa)
                 var mu = Ff/Fn
-                document.getElementById("demo4").innerHTML = "The coefficient of friction is " + mu + "&mu;";
+                if (mu < 0) {
+                    document.getElementById("demo4").innerHTML = "Impossible Situation";
+                }
+                else {
+                    document.getElementById("demo4").innerHTML = "The coefficient of friction is " + mu + "&mu;";
+                }
             }
         </script>
     </body>
