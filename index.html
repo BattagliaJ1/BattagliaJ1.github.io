@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-        <link rel="icon" href="">
+        <link rel="icon" href="favicon.png">
     </head>
     <style>
         * {
@@ -101,17 +101,23 @@
             width: 100%;
         }
         
-        #modalBtn img{
-            height: 10%;
-            width: 10%;
-            margin-left: 10%;
+        @media screen and (max-width: 750px) {
+            .modal-content {
+                width: 95%;
+                margin: 60% auto;
+            }
         }
         
+        #modalBtn img{
+            height: 7%;
+            width: 7%;
+            margin-bottom: 2%;
+            transition: all 1s;
+        }
         #modalBtn img:hover{
             cursor: pointer;
-            filter: saturate(0%)
+            filter: saturate(0%);
         }
-        
         .modal{
             display: none;
             position: fixed;
@@ -123,7 +129,6 @@
             overflow: none;
             background-color: rgba(0,0,0,0.7);
         }
-
         .modal-content{
             background-color:#f4f4f4;
             margin: auto;
@@ -132,26 +137,16 @@
             height: 75%;
             box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
             animation-name: modalopen;
-            animation-duration: 1s;
+            animation-duration: 2s;
             overflow: scroll;
             
         }
-        
         .modal-body {
             padding: 5%;
         }
-        
-        @media screen and (max-width: 750px) {
-            .modal-content {
-                width: 95%;
-                margin: 60% auto;
-            }
-        }
-
         .modal-header h2, .modal-footer h3{
           margin:0;
         }
-
         .modal-header{
             position: fixed;
             right: 14%;
@@ -160,7 +155,6 @@
             padding: 15px;
             color: #fff;
         }
-        
         .closeBtn {
             color: #ccc;
             float: right;
@@ -168,7 +162,6 @@
             color: #fff;
             transition: 1s all;
         }
-
         .closeBtn:hover,.closeBtn:focus{
             color: #cdd;
             text-decoration: none;
@@ -178,24 +171,235 @@
             transform: rotate(360deg);
 
         }
+        
+        #modalBtn3 img{
+            height: 7%;
+            width: 7%;
+            margin-bottom: 2%;
+            transition: all 1s;
+        }
+        #modalBtn3 img:hover{
+            cursor: pointer;
+            filter: saturate(0%);
+        }
+        .modal3{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: none;
+            background-color: rgba(0,0,0,0.7);
+        }
+        .modal-content3{
+            background-color:#f4f4f4;
+            margin: auto;
+            margin-top: 5%;
+            width: 75%;
+            height: 75%;
+            box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+            animation-name: modalopen;
+            animation-duration: 2s;
+            overflow: scroll;
+            
+        }
+        .modal-body3 {
+            padding: 5%;
+        }
+        .modal-header3 h2, .modal-footer3 h3{
+          margin:0;
+        }
+        .modal-header3{
+            position: fixed;
+            right: 14%;
+            margin: auto;
+            background-color: coral;
+            padding: 15px;
+            color: #fff;
+        }
+        .closeBtn3 {
+            color: #ccc;
+            float: right;
+            font-size: 2em;
+            color: #fff;
+            transition: 1s all;
+        }
+        .closeBtn3:hover,.closeBtn3:focus{
+            color: #cdd;
+            text-decoration: none;
+            cursor: pointer;
+            -ms-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+
+        }
+        
+        #modalBtn2 img{
+            height: 7%;
+            width: 7%;
+            margin-bottom: 2%;
+            transition: all 1s;
+        }
+        #modalBtn2 img:hover{
+            cursor: pointer;
+            filter: saturate(0%);
+        }
+        .modal2{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: none;
+            background-color: rgba(0,0,0,0.7);
+        }
+        .modal-content2{
+            background-color:#f4f4f4;
+            margin: auto;
+            margin-top: 5%;
+            width: 75%;
+            height: 75%;
+            box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+            animation-name: modalopen;
+            animation-duration: 2s;
+            overflow: scroll;
+            
+        }
+        .modal-body2 {
+            padding: 5%;
+        }
+        .modal-header2 h2, .modal-footer4 h3{
+          margin:0;
+        }
+        .modal-header2{
+            position: fixed;
+            right: 14%;
+            margin: auto;
+            background-color: coral;
+            padding: 15px;
+            color: #fff;
+        }
+        .closeBtn2 {
+            color: #ccc;
+            float: right;
+            font-size: 2em;
+            color: #fff;
+            transition: 1s all;
+        }
+        .closeBtn2:hover,.closeBtn2:focus{
+            color: #cdd;
+            text-decoration: none;
+            cursor: pointer;
+            -ms-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+
+        }
+        
+        #modalBtn4 img{
+            height: 7%;
+            width: 7%;
+            margin-bottom: 2%;
+            transition: all 1s;
+        }
+        #modalBtn4 img:hover{
+            cursor: pointer;
+            filter: saturate(0%);
+        }
+        .modal4{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: none;
+            background-color: rgba(0,0,0,0.7);
+        }
+        .modal-content4{
+            background-color:#f4f4f4;
+            margin: auto;
+            margin-top: 5%;
+            width: 75%;
+            height: 75%;
+            box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+            animation-name: modalopen;
+            animation-duration: 2s;
+            overflow: scroll;
+            
+        }
+        .modal-body4 {
+            padding: 5%;
+        }
+        .modal-header4 h2, .modal-footer4 h3{
+          margin:0;
+        }
+        .modal-header4{
+            position: fixed;
+            right: 14%;
+            margin: auto;
+            background-color: coral;
+            padding: 15px;
+            color: #fff;
+        }
+        .closeBtn4 {
+            color: #ccc;
+            float: right;
+            font-size: 2em;
+            color: #fff;
+            transition: 1s all;
+        }
+        .closeBtn4:hover,.closeBtn4:focus{
+            color: #cdd;
+            text-decoration: none;
+            cursor: pointer;
+            -ms-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+
+        }
+        
+        @keyframes modalopen {
+            0% {opacity: 0;}
+            100%{opacity: 1;}    
+        }
+        
+        .center {display: block; text-align: center;}
     </style>
     <body>
         <h1 class="mainHeader">Physics Workshop</h1>
-        <div id="simpleModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="closeBtn">&#10540;</span>
-                </div>
-                <div class="modal-body">
-                    <p>sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk  jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk  jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jl jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk  jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk sdjafljslkdf jlajs ;ljaslf jl;sfajlk </p>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
         <div class=flexItems>
             <div class="frame">
                 <h1>Balistic Pendulum<span id="modalBtn"><img alt="question" src="questionMark.png"/></span></h1>
+                <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="closeBtn">&#10540;</span>
+                        </div>
+                        <div class="modal-body">
+                            <p style="font-size: 2em;">Balistic Pendulum</p>
+                            <img style="box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);" src="ballpend.jpg"/><br><br><span>What is a baslitic Pendulum?<br><br>A ballistic pendulum is a device used for measuring a bullet's (or other object that could cause an inelastic collision: arrow) momentum, in this it is possible to calculate the velocity.<br><br>
+                            Although the ballistic pendulum is considered obsolete, it has remained in use for a significant length of time and led to great advances in the science of ballistics. The ballistic pendulum is still found in physics classrooms today, because of its simplicity and usefulness in demonstrating properties of momentum and energy. Unlike other methods of measuring the speed of a bullet, the basic calculations for a ballistic pendulum do not require any measurement of time, but rely only on measures of mass and distance<br><br>How to solve a balistic pendulum problem:<br>Let's say that we are given: <ul><li>Bullet's Mass (.5kg)</li><li>Block's Mass (1kg)</li><li>String's Length (.125m)</li><li>Maximum Angle (45&deg;)</li></ul><b>Solve for the velocity of the bullet</b><br><br>
+                            To find the velocity of the bullet we will first have to understand that the<br>
+                            <b>mass(bullet) * velocity(bullet) + mass(block) * velocity(block) = mass(system = mass of bullet + mass of block) * velocity(system) </b>since the block is stationary the equation will read for us <b>.5kg*v<sub>b</sub> + 0 = .5+1*v<sub>s</sub></b><br>
+                            And we are trying to solve for the velocity of the system.<br><br>
+                            First in order to find the height the block reaches, take the cos() of your angle --> &nbsp;&nbsp;&nbsp;cos(45) = <b>.7071</b><br>Times string length --> &nbsp;&nbsp;&nbsp;.7071 * .125 = <b>.08839</b><br>
+                            Now you will subract the .08839 from the string length --> &nbsp;&nbsp;&nbsp;.125 - .08839 = <b>.03661</b><br>
+                            <b>Height = .03661</b><br><br>
+                            Next you will use the equation kenetic energy = potential energy to solve for the velocity of the system or mv<sup>2</sup>/2 = mgh<br>Masses cancell --> &nbsp;&nbsp;&nbsp; v<sup>2</sup>/2 = gh<br>So -->&nbsp;&nbsp;&nbsp; v<sup>2</sup> = 2gh<br><br>
+                            Now let's take 2 * 9.80065 * .03661 = <b>0.71764</b><br>So now we have v<sup>2</sup> = .71764 --> square root both sides --> mass of system = <b>0.847134</b><br>
+                            We can now finish the equation that we started with m<sub>b</sub>(.5) * v<sub>b</sub> + 0 = m<sub>s</sub>(1.5) * v<sub>s</sub>(.8471) --> <b>.5v<sub>b</sub> = 1.27065</b><br>Divide both sides by .5 --> <b>v<sub>b</sub> = 2.54 m/s<sup>2</sup></b>
+                            </span>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
                 <p class="frameItems">
                     Enter your gravity:<br>
                     <input type="text" id="gravity" name="gravity" value="9.80065"><br><br>
@@ -209,12 +413,24 @@
                     <input type="text" id="maxAngle" name="maxAngle"><br><br>
                 </p>
                 <p>
-                    <button class="mainBtn" onclick="balistic()">Get Final Velocity</button>
+                    <button class="mainBtn" onclick="balistic()">Get Bullet Velocity</button>
                 </p>
                 <h3>Answer: </h3><p id="demo2">&rang;&rang;&rang;</p>
             </div>
             <div class="frame">
-                <h1>Inelastic Collision</h1>
+                <h1>Inelastic Collision<span id="modalBtn2"><img alt="question" src="questionMark.png"/></span></h1>
+                <div id="simpleModal2" class="modal2">
+                    <div class="modal-content2">
+                        <div class="modal-header2">
+                            <span class="closeBtn2">&#10540;</span>
+                        </div>
+                        <div class="modal-body2">
+                            <p>Inelastic Collision</p>
+                        </div>
+                        <div class="modal-footer2">
+                        </div>
+                    </div>
+                </div>
                 <p class="frameItems">
                     Enter your first mass:<br>
                     <input type="text" id="massOne" name="massOne"><br><br>
@@ -231,7 +447,19 @@
                 <h3>Answer: </h3><p id="demo">&rang;&rang;&rang;</p>
             </div>
             <div class="frame">
-                <h1>Physics Ramps: Acceleration</h1>
+                <h1>Physics Ramps: Acceleration<span id="modalBtn3"><img alt="question" src="questionMark.png"/></span></h1>
+                <div id="simpleModal3" class="modal3">
+                    <div class="modal-content3">
+                        <div class="modal-header3">
+                            <span class="closeBtn3">&#10540;</span>
+                        </div>
+                        <div class="modal-body3">
+                            <p>Physics Ramps: Acceleration</p>
+                        </div>
+                        <div class="modal-footer3">
+                        </div>
+                    </div>
+                </div>
                 <p class="frameItems">
                     Enter the degree of incline on your ramp:<br>
                     <input type="text" id="inclineAngle" name="inclineAngle"><br><br>
@@ -244,7 +472,19 @@
                 <h3>Answer: </h3><p id="demo3">&rang;&rang;&rang;</p>
             </div>
             <div class="frame">
-                <h1>Physics Ramps: Coefficient  of Friction</h1>
+                <h1>Physics Ramps: Coefficient  of Friction<span id="modalBtn4"><img alt="question" src="questionMark.png"/></span></h1>
+                <div id="simpleModal4" class="modal4">
+                    <div class="modal-content4">
+                        <div class="modal-header4">
+                            <span class="closeBtn4">&#10540;</span>
+                        </div>
+                        <div class="modal-body4">
+                            <p>Physics Ramps: Coefficient  of Friction</p>
+                        </div>
+                        <div class="modal-footer4">
+                        </div>
+                    </div>
+                </div>
                 <p class="frameItems">
                     Enter the degree of incline on your ramp:<br>
                     <input type="text" id="inclineAngle2" name="inclineAngle2"><br><br>
@@ -262,27 +502,83 @@
         </div>
         <h1 class="mainFooter">By: <i>Justin Battaglia</i> &copy; 2018</h1>
         <script>
+            // Number 1
             var modal = document.getElementById('simpleModal');
             var modalBtn = document.getElementById('modalBtn');
             var closeBtn = document.getElementsByClassName('closeBtn')[0];
-
             modalBtn.addEventListener('click', openModal);
             closeBtn.addEventListener('click', closeModal);
             window.addEventListener('click', outsideClick);
-
             function openModal(){
               modal.style.display = 'block';
             }
-
             function closeModal(){
               modal.style.display = 'none';
             }
-
             function outsideClick(e){
               if(e.target == modal){
                 modal.style.display = 'none';
               }
             }
+            
+            // Number 2
+            var modal2 = document.getElementById('simpleModal2');
+            var modalBtn2 = document.getElementById('modalBtn2');
+            var closeBtn2 = document.getElementsByClassName('closeBtn2')[0];
+            modalBtn2.addEventListener('click', openModal2);
+            closeBtn2.addEventListener('click', closeModal2);
+            window.addEventListener('click', outsideClick);
+            function openModal2(){
+              modal2.style.display = 'block';
+            }
+            function closeModal2(){
+              modal2.style.display = 'none';
+            }
+            function outsideClick(e){
+              if(e.target == modal2){
+                modal2.style.display = 'none';
+              }
+            }
+            
+            // Number 3
+            var modal3 = document.getElementById('simpleModal3');
+            var modalBtn3 = document.getElementById('modalBtn3');
+            var closeBtn3 = document.getElementsByClassName('closeBtn3')[0];
+            modalBtn3.addEventListener('click', openModal3);
+            closeBtn3.addEventListener('click', closeModal3);
+            window.addEventListener('click', outsideClick);
+            function openModal3(){
+              modal3.style.display = 'block';
+            }
+            function closeModal3(){
+              modal3.style.display = 'none';
+            }
+            function outsideClick(e){
+              if(e.target == modal3){
+                modal2.style.display = 'none';
+              }
+            }
+            
+            // Number 4
+            var modal4 = document.getElementById('simpleModal4');
+            var modalBtn4 = document.getElementById('modalBtn4');
+            var closeBtn4 = document.getElementsByClassName('closeBtn4')[0];
+            modalBtn4.addEventListener('click', openModal4);
+            closeBtn4.addEventListener('click', closeModal4);
+            window.addEventListener('click', outsideClick);
+            function openModal4(){
+              modal4.style.display = 'block';
+            }
+            function closeModal4(){
+              modal4.style.display = 'none';
+            }
+            function outsideClick(e){
+              if(e.target == modal4){
+                modal4.style.display = 'none';
+              }
+            }
+            
+            
             
             function isInteger(x) {
                 return typeof(x);
