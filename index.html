@@ -660,11 +660,12 @@
                 var F = (Fw/9.80065)*acceleration2
                 var Ff = -1*(F-Fa)
                 var mu = Ff/Fn
+                var finalRamp = (Math.tand(inclineAngle2)) - (acceleration2/(9.8*(Math.cosd(inclineAngle2))))
                 if (mu < 0 || inclineAngle2 >= 90) {
                     document.getElementById("demo4").innerHTML = "Either an Impossible Situation was given or friction was extremely small";
                 }
                 else {
-                    document.getElementById("demo4").innerHTML = "The coefficient of friction is " + mu + "&mu;";
+                    document.getElementById("demo4").innerHTML = "The coefficient of friction is " + finalRamp + "&mu;";
                 }
             }
         </script>
