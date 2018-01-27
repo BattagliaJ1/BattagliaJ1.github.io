@@ -675,7 +675,7 @@
                 var gravity = 9.80065
                 var acceleration = gravity*(Math.sind(inclineAngle)) - ((friction*gravity)*(Math.cosd(inclineAngle)))
                 if (acceleration < 0 || inclineAngle === 90) {
-                    document.getElementById("demo4").innerHTML = "Either an Impossible Situation was given or acceleration was extremely small";
+                    document.getElementById("demo3").innerHTML = "Either an Impossible Situation was given or acceleration was extremely small";
                 }
                 else {
                     document.getElementById("demo3").innerHTML = "The final acceleration of this object is " + acceleration + " m/s<sup>2</sup>";
