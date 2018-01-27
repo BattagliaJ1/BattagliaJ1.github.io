@@ -674,7 +674,7 @@
                 var friction = Number(document.getElementById("friction").value);
                 var gravity = 9.80065
                 var acceleration = gravity*(Math.sind(inclineAngle)) - ((friction*gravity)*(Math.cosd(inclineAngle)))
-                if (mu < 0 || inclineAngle2 >= 90) {
+                if (mu < 0 || inclineAngle2 === 90) {
                     document.getElementById("demo4").innerHTML = "Either an Impossible Situation was given or acceleration was extremely small";
                 }
                 else {
